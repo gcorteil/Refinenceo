@@ -46,10 +46,17 @@
       display: block;
     }
 
+    .hint {
+      font-size: 0.85rem;
+      color: #ccc;
+      margin-top: 4px;
+      margin-bottom: 10px;
+    }
+
     input {
       width: 100%;
       padding: 10px;
-      margin-top: 8px;
+      margin-top: 4px;
       border: none;
       border-radius: 10px;
       font-size: 1rem;
@@ -90,30 +97,39 @@
   <div class="container">
     <label>Mensualité actuelle (€)</label>
     <input type="number" id="mensualiteActuelle">
+    <div class="hint">Montant mensuel que vous payez actuellement pour votre prêt (ex: 850€).</div>
 
     <label>Durée restante (mois)</label>
     <input type="number" id="dureeRestante">
+    <div class="hint">Nombre de mois qu’il vous reste à rembourser (ex: 180 mois pour 15 ans).</div>
 
     <label>Frais remboursement anticipé (€)</label>
     <input type="number" id="fraisAnticipe">
+    <div class="hint">Frais que votre banque actuelle peut appliquer si vous remboursez votre prêt par anticipation.</div>
 
     <label>Nouvelle mensualité (€)</label>
     <input type="number" id="mensualiteNouvelle">
+    <div class="hint">Montant de la mensualité proposée par votre nouvelle offre (ex: 700€).</div>
 
     <label>Nouvelle durée (mois)</label>
     <input type="number" id="dureeNouvelle">
+    <div class="hint">Durée du nouveau crédit en mois (ex: 240 mois pour 20 ans).</div>
 
     <label>Frais de dossier (€)</label>
     <input type="number" id="fraisDossier">
+    <div class="hint">Frais facturés par la nouvelle banque pour le montage du dossier.</div>
 
     <label>Frais de garantie (€)</label>
     <input type="number" id="fraisGarantie">
+    <div class="hint">Coût d’une nouvelle hypothèque ou caution (ex: Crédit Logement).</div>
 
     <label>Frais de notaire (€)</label>
     <input type="number" id="fraisNotaire">
+    <div class="hint">Frais liés à un éventuel nouvel acte notarié (selon type de refinancement).</div>
 
     <label>Autres frais (€)</label>
     <input type="number" id="autresFrais">
+    <div class="hint">Tout autre frais éventuel (ex: courtier, assurance, etc.).</div>
 
     <button onclick="calculerGain()">Calculer</button>
 
